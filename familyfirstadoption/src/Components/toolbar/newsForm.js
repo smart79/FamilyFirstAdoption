@@ -23,7 +23,7 @@ class NewsForm extends React.Component{
                                         <div class="col-md-4 mb-3">
                                             <input type="submit" class="btn btn-primary btn-block" value="Subscribe"/>
                                         </div>
-                                    </div>        
+                                    </div>
                                 </form>
                             </div>
                         </div>
