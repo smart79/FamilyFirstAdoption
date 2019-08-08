@@ -1,22 +1,21 @@
 import React, {Component} from 'react';
 
-import Toolbar from './Components/toolbar/toolbar';
-import Jumbotron from './Components/toolbar/jumbotron';
-import DropMenu from './Components/toolbar/dropmenu';
-import Footer from './Components/toolbar/footer';
-import NewsForm from './Components/toolbar/newsForm';
+// import AppAbout from './AppAbout';
+import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
+import Home from './Components/home';
+import About from './Components/About';
+
 
 class App extends Component{
   render(){
     return(
+      <Router>
       <div className="App">
-      <Toolbar/>
-      <Jumbotron/>
-      <DropMenu/>
-      <NewsForm/>
-      <Footer/>
-
+      <Route exact path="/" component={Home}/>
+      <Route path="/About" component={About}/>
       </div>
+      </Router>
+
 
     )
   }
