@@ -6,9 +6,6 @@ class NavMenu extends React.Component {
     render() {
       return (
         <Router>
-        <Switch>
-        <Route path="/About" component={About}/>
-        </Switch>
         <div className="nav-menu">
             <header role="banner">
                 <div className="top-bar">
@@ -25,7 +22,7 @@ class NavMenu extends React.Component {
                 </div>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="container">
-                        <a className="navbar-brand" href="index.html">Adopted</a>
+                        <a className="navbar-brand" href="/">Adopted</a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -33,7 +30,7 @@ class NavMenu extends React.Component {
                         <div className="collapse navbar-collapse" id="navbarsExample05">
                             <ul className="navbar-nav ml-auto pl-lg-5 pl-0">
                                 <li className="nav-item">
-                                    <a className="nav-link active" href="index.html">Home</a>
+                                    <a className="nav-link active" href="/">Home</a>
                                 </li>
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Adoption</a>
@@ -46,7 +43,7 @@ class NavMenu extends React.Component {
                                 </li>
                                 
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/About">About</Link>
+                                    <a className="nav-link" href="/About">About</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="contact.html">Contact</a>
