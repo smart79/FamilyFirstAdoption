@@ -14,7 +14,7 @@ module.exports = function(sequelize, DataTypes) {
         }
       },
       Cage: { 
-          type: DataTypes.INT,
+          type: DataTypes.INTEGER,
           allowNull: false,
         },
       Ccity: {
