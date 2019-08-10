@@ -1,30 +1,38 @@
 module.exports = function(sequelize, DataTypes) {
-    var Child = sequelize.define("Children", {
-      CfirstName: {
+    var Sponsor = sequelize.define("Sponsor", {
+      SfirstName: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           len: [1, 20]
         }
       },
-      ClastName: {
+      SlastName: {
         type: DataTypes.STRING,
+        allowNull: false,
         validate: {
           len: [1, 20]
         }
       },
-      Cage: { 
-          type: DataTypes.INTEGER,
+      Semail: { 
+          type: DataTypes.STRING,
           allowNull: false,
         },
-      Ccity: {
+      Sphone: {
+          type: DataTypes.INTEGER,
+          allowNull: false,
+          validate: {
+              len: [10]
+          }
+        },
+      Scity: {
           type: DataTypes.STRING,
           allowNull: false,
           validate: {
             len: [3, 20]
         }
       },
-      Ccountry: {
+      Scountry: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
@@ -33,5 +41,5 @@ module.exports = function(sequelize, DataTypes) {
     }
     });
   
-    return Child;
+    return Sponsor;
   };
