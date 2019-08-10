@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Ashish1991",
+    "password": "password",
     "database": "familyfirst_db",
     "host": "localhost",
     "port": 3306,
