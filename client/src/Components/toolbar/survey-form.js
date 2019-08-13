@@ -15,7 +15,7 @@ class Survey extends Component {
           <h3><strong>About You</strong></h3>
 
           <h4>First Name (Required)</h4>
-          <input type="text" id="Fname" className="form-control" required onChange={this.handleInputs} />
+          <input type="text" id="Fname" className="form-control" onChange={this.handleInputs} required />
           <h4>Last Name (Required)</h4>
           <input type="text" id="Lname" className="form-control" required />
           <h4>Address (Required)</h4>
@@ -25,7 +25,6 @@ class Survey extends Component {
           <input type="text" id="spouseLname" className="form-control" required />
           <h4>Address (Required)</h4>
           <input type="text" id="address" className="form-control" required />
-
           <h4>City (Required)</h4>
           <input type="text" id="city" className="form-control" required />
           <h4>State (Required)</h4>
@@ -99,7 +98,7 @@ class Survey extends Component {
 
           <div className="form-group">
             <h4>Spouse's hobbies and talents</h4>
-            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <label for="exampleFormControlTextarea1">Example text area</label>
             <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           <h4>Spouse's Community sevice / involment</h4>
