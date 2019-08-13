@@ -17,52 +17,72 @@ class Survey extends Component {
           <h4>First Name (Required)</h4>
           <input type="text" id="Fname" className="form-control" onChange={this.handleInputs} required />
           <h4>Last Name (Required)</h4>
-          <input type="text" id="Lname" className="form-control" required />
-          <h4>Address (Required)</h4>
-          <h4>Spouse's First Name (Required)</h4>
-          <input type="text" id="spouseFname" className="form-control" required />
-          <h4>Spouse's Last Name (Required)</h4>
-          <input type="text" id="spouseLname" className="form-control" required />
-          <h4>Address (Required)</h4>
-          <input type="text" id="address" className="form-control" required />
+          <input type="text" id="Lname" className="form-control" onChange={this.handleInputs} required />
+          <h4>Address</h4>
+          <input type="text" id="address" className="form-control" onChange={this.handleInputs} />
+          <h4>Spouse's First Name</h4>
+          <input type="text" id="spouseFname" className="form-control" onChange={this.handleInputs} />
+          <h4>Spouse's Last Name</h4>
+          <input type="text" id="spouseLname" className="form-control" onChange={this.handleInputs} />
+          <h4>Address</h4>
+          <input type="text" id="address" className="form-control" onChange={this.handleInputs} />
           <h4>City (Required)</h4>
-          <input type="text" id="city" className="form-control" required />
+          <input type="text" id="city" className="form-control" onChange={this.handleInputs} required />
           <h4>State (Required)</h4>
-          <input type="text" id="state" className="form-control" required />
+          <input type="text" id="state" className="form-control" onChange={this.handleInputs} required />
+          <h4>Country (Required)</h4>
+          <input type="text" id="state" className="form-control" onChange={this.handleInputs} required />
           <h4>Phone Number (Required)</h4>
-          <input type="text" id="phone" className="form-control" required />
+          <input type="text" id="phone" className="form-control" onChange={this.handleInputs} required />
           <h4>Email (Required)</h4>
-          <input type="text" id="email" className="form-control" required />
-          <h4>Religion (Required)</h4>
-          <input type="text" id="religion" className="form-control" required />
-          <h4>Ocupation (Required)</h4>
-          <input type="text" id="ocupation" className="form-control" required />
-          <h4>Education (Required)</h4>
-          <input type="text" id="education" className="form-control" required />
+          <input type="text" id="email" className="form-control" onChange={this.handleInputs} required />
+          <h4>Religion</h4>
+          <input type="text" id="religion" className="form-control" onChange={this.handleInputs} />
+          <h4>Ocupation</h4>
+          <input type="text" id="ocupation" className="form-control" onChange={this.handleInputs} />
+          <h4>Education</h4>
+          <input type="text" id="education" className="form-control" onChange={this.handleInputs} />
 
           <h4>Link to Photo Image (Required)</h4>
-          <input type="text" id="photo" className="form-control" required />
+          <input type="text" id="photo" className="form-control" onChange={this.handleInputs} required />
 
           <hr />
 
           <h3><strong>Question 1</strong></h3>
-          <h4>How did you hear about our Adoption site?</h4>
+          <h4>What Country do you wish to Adopt from?</h4>
           <select className="chosen-select" id="q1">
             <option value=""></option>
-            <option value="1">Adds</option>
-            <option value="2">Friends / Family</option>
-            <option value="3">Social Media</option>
-            <option value="4">Other</option>
+            <option value="1">____</option>
+            <option value="2">____</option>
+            <option value="3">No preference</option>>
           </select>
 
           <h3><strong>Question 2</strong></h3>
-          <h4>When will you be ready to begin the adoption process?</h4>
+          <h4>Do you have a gender preference when adopting? </h4>
           <select className="chosen-select" id="q2">
             <option value=""></option>
-            <option value="1">Today</option>
-            <option value="2">3-6 Months </option>
-            <option value="3">6 monts to a year</option>
-            <option value="4">More than a year</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">No Preference</option>ion>
+          </select>
+
+          <h3><strong>Question 3</strong></h3>
+          <h4>What age Group do you prefer to adopt?</h4>
+          <select className="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">under 5 years</option>
+            <option value="2">over 5 years old</option>
+            <option value="3">No Preference</option>>
+          </select>
+
+          <h3><strong>Question 4</strong></h3>
+          <h4>Will you concider Special needs when adopting? </h4>
+          <select className="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+            <option value="3">special needs only</option>
+
           </select>
 
 

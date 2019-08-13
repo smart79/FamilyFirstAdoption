@@ -22,7 +22,7 @@ class NavMenu extends React.Component {
                         </div>
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
                             <div className="container">
-                                <a className="navbar-brand" href="/">Adopted</a>
+                                <a className="navbar-brand" href="/">Family First Adoption Services</a>
                                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                                     <span className="navbar-toggler-icon"></span>
                                 </button>
