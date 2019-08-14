@@ -40,7 +40,7 @@ module.exports = function (app) {
 
     // Get all that are special needs
     app.get("/api/Children/Cspnds/:Cspnds", function (req, res) {
-        Children.findAll({
+        Child.findAll({
             where: {
                 Cspnds: req.params.Cspnds
             }
@@ -51,7 +51,7 @@ module.exports = function (app) {
 
     // Get all over 5 from Children 
     app.get("/api/Children/Cage", function (req, res) {
-        Children.findAll({
+        Child.findAll({
             where: {
                 Cage: {
                     $gte: 5
@@ -65,7 +65,7 @@ module.exports = function (app) {
 
     // Get all under 5 from Children
     app.get("/api/Children/Cage", function (req, res) {
-        Children.findAll({
+        Child.findAll({
             where: {
                 Cage: {
                     $lte: 5
