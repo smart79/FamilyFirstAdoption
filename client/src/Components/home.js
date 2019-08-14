@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './toolbar/toolbar.css';
 import Jumbotron from './toolbar/jumbotron';
 import DropMenu from './toolbar/dropmenu';
 import NewsForm from './toolbar/newsForm';
