@@ -6,84 +6,84 @@ const passport = require('passport'),
   ExtractJWT = require('passport-jwt').ExtractJwt,
   jwtSecret = require('./jwtConfig'),
   bcrypt = require('bcryptjs');
-  const util = require('util')
+// const util = require('util')
 
-  const BCRYPT_SALT_ROUNDS = 12;
+const BCRYPT_SALT_ROUNDS = 12;
 
-  // Passport User Registration Section 
-  passport.use(
-    'register',
-    new localStrategy(
-      {
-        usernameField: 'username',
-        passwordField: 'password',
-        session: false
-      },
-      (username, password, done) => {
-        try {
-          db.User.findOne({
-            where: {
-              user_name: username
-            }
-          }).then(user => {
-            if(user !== null) {
-              console.log('username already taken');
-              return done(null, false, {message: 'Username already taken'});
-            } else {
-              bcrypt.hash(password, BCRYPT_SALT_ROUNDS).then(hashedPassword => {
-                  db.User.create({
-                      user_name: username,
-                      hashed_password: hashedPassword
-                    }).then(user => {
-                    console.log('User created');
-                    return done(null, user);
-                  });
-                });
-            }
-          });
-        } catch (err) {
-          done(err);
-        }
-      },
-    ),
-  );
+// Passport User Registration Section 
+passport.use(
+  'register',
+  new localStrategy(
+    {
+      usernameField: 'username',
+      passwordField: 'password',
+      session: false
+    },
+    (username, password, done) => {
+      try {
+        db.User.findOne({
+          where: {
+            user_name: username
+          }
+        }).then(user => {
+          if (user !== null) {
+            console.log('username already taken');
+            return done(null, false, { message: 'Username already taken' });
+          } else {
+            bcrypt.hash(password, BCRYPT_SALT_ROUNDS).then(hashedPassword => {
+              db.User.create({
+                user_name: username,
+                hashed_password: hashedPassword
+              }).then(user => {
+                console.log('User created');
+                return done(null, user);
+              });
+            });
+          }
+        });
+      } catch (err) {
+        done(err);
+      }
+    },
+  ),
+);
 
 // Passport Login Section
 passport.use(
   'login',
   new localStrategy(
-      {
-        usernameField: 'username',
-        passwordField: 'password',
-        session: false
-      },
-      (username, password, done) => {
-        try {
-          db.User.findOne({
-            where: {
-              user_name: username
-            }
-          }).then(user => {
-            // console.log('user on passport.js ' + util.inspect(user.dataValues));
-            if(user === null) {
-              return done(null, false, {message: 'Login failed'});
-            } else {
-              bcrypt.compare(password, user.hashed_password).then(response => {
-                if (response !== true) {
-                  // console.log('passwords do not match');
-                  return done(null, false, {message: 'Login failed'});
-                }
-                console.log('user found & authenticated');
-                // console.log('user on passport.js ' + util.inspect(user.dataValues));
-                return done(null, user);
-              });
-            }
-          });
-        } catch (err) {
-          done (err);
-        }
-      },
-    ),
+    {
+      usernameField: 'username',
+      passwordField: 'password',
+      session: false
+    },
+    (username, password, done) => {
+      try {
+        db.User.findOne({
+          where: {
+            user_name: username
+          }
+        }).then(user => {
+          // console.log('user on passport.js ' + util.inspect(user.dataValues));
+          if (user === null) {
+            return done(null, false, { message: 'Login failed' });
+          } else {
+            bcrypt.compare(password, user.hashed_password).then(response => {
+              if (response !== true) {
+                // console.log('passwords do not match');
+                return done(null, false, { message: 'Login failed' });
+              }
+              console.log('user found & authenticated');
+              // console.log('user on passport.js ' + util.inspect(user.dataValues));
+              return done(null, user);
+            });
+          }
+        });
+      } catch (err) {
+        done(err);
+      }
+    },
+  ),
 );
 
 const opts = {

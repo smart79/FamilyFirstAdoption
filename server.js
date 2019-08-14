@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Define middleware here                     
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+app.use(express.static("./client/build"))
 
 // Requiring our models for syncing
 var db = require("./models");
@@ -28,8 +28,8 @@ if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
 
-db.sequelize.sync({ force: true }).then(function() {
-  app.listen(PORT, function() {
+db.sequelize.sync({ force: true }).then(function () {
+  app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
   });
 });
