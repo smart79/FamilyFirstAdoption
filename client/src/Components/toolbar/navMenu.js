@@ -20,7 +20,7 @@ class NavMenu extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                        <nav className="navbar navbar-expand-lg navbar-light bg-light" id="whole-navbar">
                             <div className="container">
                                 <a className="navbar-brand" href="/">Family First Adoption Services</a>
                                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,7 @@ class NavMenu extends React.Component {
                                             <a className="nav-link active" href="/">Home</a>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Adoption</a>
+                                            <a className="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                                             <div className="dropdown-menu" aria-labelledby="dropdown04">
                                                 <a className="dropdown-item" href="adoption.html">Adoption</a>
                                                 <a className="dropdown-item" href="adoption.html">Waiting Children</a>
@@ -43,7 +43,7 @@ class NavMenu extends React.Component {
                                         </li>
 
                                         <li className="nav-item">
-                                            <a className="nav-link" href="/About">About</a>
+                                            <a className="nav-link" href="/About">Adopt</a>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link" href="/contact">Contact</a>
