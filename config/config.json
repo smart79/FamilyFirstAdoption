@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
+    "password": "password",
     "database": "familyfirstadoption_db",
     "host": "localhost",
     "port": 8889,
@@ -10,7 +10,8 @@
   },
   "test": {
     "username": "root",
-    "password": "root",
+    "password": "password",
+    "password": "Beason11!",
     "database": "familyfirstadoption_db",
     "host": "127.0.0.1",
     "freezeTableName": true,

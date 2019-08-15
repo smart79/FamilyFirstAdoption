@@ -1,71 +1,86 @@
 //*********************************************************************************
 // API.js - this file offers a set of routes for displaying and saving data to the db
 // *********************************************************************************
-
 // Dependencies
 // =============================================================
-var Child = require("../models/children.js");
-
+var db = require("../models");
 // Routes
 // =============================================================
-module.exports = function (app) {
-    // Get all children
-    app.get("/api/Children/all", function (req, res) {
-        Child.findAll({}).then(function (results) {
-            res.json(results);
-        });
-    });
+module.exports = app => {
+
+    app.get("/api/children/ui", function (req, res) {
+        db.Children.findAll({
+            where: {
+                Ccountry: req.params.adoptC,
+                Cage: req.params.adoptA,
+                Cgender: req.params.adoptG,
+                Cspnds: req.params.adoptS
+            }
+        })
+    })
+
+    app.get('/api/children/:id', (req, res) => {
+        db.Children.findOne({
+            where: {
+                id: req.params.id
+            }
+        }).then(data => {
+            res.json(data)
+        })
+    })
+
+    app.get('/api/children', (req, res) => {
+        db.Children.findAll({}).then(data => {
+            res.json(data)
+        })
+    })
 
     // Get a specific child
-    app.get("/api/Children/:id", function (req, res) {
-        Child.findAll({
+    app.get("/api/children/CfirstName/:CfirstName", function (req, res) {
+        db.Children.findAll({
             where: {
-                title: req.params.Child
+                CfirstName: req.params.CfirstName
             }
-        }).then(function (results) {
-            res.json(results);
-        });
-    });
-
+        }).then(data => {
+            res.json(data)
+        })
+    })
     // Get all Children of a specific gender
-    app.get("/api/Children/Cgender/:gender", function (req, res) {
-        Child.findAll({
+    app.get("/api/children/Cgender/:Cgender", function (req, res) {
+        db.Children.findAll({
             where: {
-                gender: req.params.gender
+                Cgender: req.params.Cgender
             }
-        }).then(function (results) {
-            res.json(results);
+        }).then(data => {
+            res.json(data)
         });
     });
-
     // Get all that are special needs
-    app.get("/api/Children/Cspnds/:Cspnds", function (req, res) {
-        Child.findAll({
+    app.get("/api/children/Cspnds/:Cspnds", function (req, res) {
+        db.Children.findAll({
             where: {
                 Cspnds: req.params.Cspnds
             }
-        }).then(function (results) {
-            res.json(results);
+        }).then(data => {
+            res.json(data)
         });
     });
-
     // Get all over 5 from Children 
-    app.get("/api/Children/Cage", function (req, res) {
-        Child.findAll({
+    app.get("/api/children/above", function (req, res) {
+        db.Children.findAll({
             where: {
                 Cage: {
-                    $gte: 5
+                    $gt: 5
                 }
             },
             order: [["Cage", "DESC"]]
-        }).then(function (results) {
-            res.json(results);
+        }).then(data => {
+            res.json(data)
         });
     });
-
     // Get all under 5 from Children
-    app.get("/api/Children/Cage", function (req, res) {
-        Child.findAll({
+    app.get("/api/children/Cage", function (req, res) {
+        db.Children.findAll({
             where: {
                 Cage: {
                     $lte: 5
@@ -76,32 +91,28 @@ module.exports = function (app) {
             res.json(results);
         });
     });
-
     // Add a Child
-    app.post("/api/new", function (req, res) {
+    app.post("/api/children/new", function (req, res) {
         console.log("Children Data:");
         console.log(req.body);
-        Child.create({
+        db.Children.create({
             CfirstName: req.body.CfirstName,
             Cimage: req.body.Cimage,
             ClastName: req.body.ClastName,
             Cage: req.body.Cage,
             Cgender: req.body.Cgender,
             Ccity: req.body.Ccity,
-            Cstate: req.body.Cstate,
             Ccountry: req.body.Ccountry,
-            Cspnds: req.body.Cspnds,
-
+            Cspnds: req.body.Cspnds
         }).then(function (results) {
             res.json(results);
         });
     });
-
     // Delete a Child
-    app.delete("/api/Children/:id", function (req, res) {
+    app.delete("/api/children/:id", function (req, res) {
         console.log("Child ID:");
         console.log(req.params.id);
-        Child.destroy({
+        db.Children.destroy({
             where: {
                 id: req.params.id
             }
