@@ -352,7 +352,8 @@ class Survey extends Component {
             <option value="3">special needs only</option>
 
           </select>
-
+<br/>
+<br/>
 
           {/* <h3><strong>General Description</strong></h3>
 
