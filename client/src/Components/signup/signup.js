@@ -133,7 +133,7 @@ class SignUp extends React.Component {
 
         
         if (this.state.redirect === true) {
-            return <Redirect to='/home' />
+            return <Redirect to='/' />
         }
 
         return (

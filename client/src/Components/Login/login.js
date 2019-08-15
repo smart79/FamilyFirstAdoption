@@ -94,7 +94,7 @@ class Login extends React.Component{
                                 </div>
                             </div>
                             <input id='submit' type='submit' value='SUBMIT' onClick={this.handleSubmit} />
-                            <span><a href='/signup'>Sign Up</a> | </span> 
+                            <span><a href='/signup'> Sign Up </a> </span> 
                             <br />
                             {this.state.error ? <Message key='1'> {this.state.errorMessage} </Message> : null}
                         </div>

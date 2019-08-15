@@ -1,9 +1,54 @@
+.login-h3 {
+    color:black;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bbstyle {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    box-shadow: 3px 3px 20px -3px rgba(0, 0, 0, 0.568);
+}
+
+h3 {
+    font-weight: bold;
+}
+
+input {
+    width: 350px;
+}
+
 .login-div {
     font-size: 30px;
     margin-bottom: 20px;
     margin-top: 60px;
 }
 
-.infoText {
-    text-align: right; 
+.submit, #submit {
+    background-color: rgb(0, 73, 97);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 3px 3px 20px -3px rgba(0, 0, 0, 0.568);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 100%;
+}
+  
+.submit, #submit:hover, .standard-btn:hover, .getRxData:hover {
+    opacity: .9;
+    cursor: pointer;
 }

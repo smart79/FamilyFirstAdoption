@@ -19,11 +19,8 @@ module.exports = function(sequelize, DataTypes) {
           allowNull: false,
         },
       Sphone: {
-          type: DataTypes.INTEGER,
-          allowNull: false,
-          validate: {
-              len: [10]
-          }
+          type: DataTypes.STRING,
+          allowNull: false
         },
       Scity: {
           type: DataTypes.STRING,
@@ -38,8 +35,6 @@ module.exports = function(sequelize, DataTypes) {
         validate: {
             len: [3,10]
         }
-    }
-    });
-  
+    }});
     return Sponsor;
   };
