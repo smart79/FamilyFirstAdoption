@@ -6,7 +6,7 @@ class Contact extends Component{
     render(){
       return(
         <div className="Contact">
-            <div className="container">
+            <div className="container contact">
                 <div className="row">
                 <main id="main" className="col-9">
                     <h1>Contact us</h1>
@@ -24,8 +24,8 @@ class Contact extends Component{
 
                         <h3>By email</h3>
 
-                        <p>In English: <a href="mailto:info@adoptuskids.org">info@adoptuskids.org</a><br/>
-                        En español: <a href="mailto:espanol@adoptuskids.org">espanol@adoptuskids.org</a></p>
+                        <p>In English: <a href="mailto:info@adoptuskids.org">info@ffa.org</a><br/>
+                        En español: <a href="mailto:espanol@adoptuskids.org">espanol@ffa.org</a></p>
 
                         <h3>Chat</h3>
 
@@ -36,11 +36,11 @@ class Contact extends Component{
                         <p>Are you registered on our website and having trouble with your account? Call or email our technical support staff weekdays, 9:30 a.m.–6:30 p.m. eastern time.</p>
 
                         <p>By phone: 800-901-6911<br/>
-                        By email: <a href="mailto:support@adoptuskids.org">support@adoptuskids.org</a></p>
+                        By email: <a href="mailto:support@adoptuskids.org">support@ffa.org</a></p>
 
                         <h2>Photo submissions</h2>
 
-                        <p>Submit photos of registered children and families for our photolisting by email to <a href="mailto:Photos@adoptuskids.org">photos@adoptuskids.org</a>. Please include name and case number.</p>
+                        <p>Submit photos of registered children and families for our photolisting by email to <a href="mailto:Photos@adoptuskids.org">photos@ffa.org</a>. Please include name and case number.</p>
 
                         <h2>Media inquiries</h2>
 
