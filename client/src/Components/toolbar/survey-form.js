@@ -44,14 +44,14 @@ class Survey extends Component {
           <input type="text" id="Fname" name="firstName" value={this.state.firstName} className="form-control" onChange={this.handleInputs} required />
           <h4>Last Name (Required)</h4>
           <input type="text" id="Lname" name="lastName" value={this.state.lastName} className="form-control" onChange={this.handleInputs} required />
-          <h4>Address</h4>
+          {/* <h4>Address</h4>
           <input type="text" id="address" name="address" value={this.state.address} className="form-control" onChange={this.handleInputs} />
           <h4>Spouse's First Name</h4>
           <input type="text" id="spouseFname" name="spFname" value={this.state.spFname} className="form-control" onChange={this.handleInputs} />
           <h4>Spouse's Last Name</h4>
           <input type="text" id="spouseLname" name="spLname" value={this.state.spLname} className="form-control" onChange={this.handleInputs} />
           <h4>Address</h4>
-          <input type="text" id="spaddress" name="spaddress" value={this.state.spaddress} className="form-control" onChange={this.handleInputs} />
+          <input type="text" id="spaddress" name="spaddress" value={this.state.spaddress} className="form-control" onChange={this.handleInputs} /> */}
           <h4>City (Required)</h4>
           <input type="text" id="city" name="city" value={this.state.city} className="form-control" onChange={this.handleInputs} required />
           <h4>State (Required)</h4>
@@ -62,12 +62,12 @@ class Survey extends Component {
           <input type="text" id="phone" name="phone" value={this.state.phone} className="form-control" onChange={this.handleInputs} required />
           <h4>Email (Required)</h4>
           <input type="text" id="email" name="email" value={this.state.email} className="form-control" onChange={this.handleInputs} required />
-          <h4>Religion</h4>
+          {/* <h4>Religion</h4>
           <input type="text" id="religion" name="religion" value={this.state.religion} className="form-control" onChange={this.handleInputs} />
           <h4>Occupation</h4>
           <input type="text" id="occupation" name="occupation" value={this.state.occupation} className="form-control" onChange={this.handleInputs} />
           <h4>Education</h4>
-          <input type="text" id="education" name="education" value={this.state.education} className="form-control" onChange={this.handleInputs} />
+          <input type="text" id="education" name="education" value={this.state.education} className="form-control" onChange={this.handleInputs} /> */}
 
           <h4>Link to Photo Image (Required)</h4>
           <input type="text" id="photo" name="photo" value={this.state.photo} className="form-control" onChange={this.handleInputs} required />
@@ -352,9 +352,10 @@ class Survey extends Component {
             <option value="3">special needs only</option>
 
           </select>
+<br/>
+<br/>
 
-
-          <h3><strong>General Description</strong></h3>
+          {/* <h3><strong>General Description</strong></h3>
 
           <h4>Date of Birth</h4>
           <input type="text" id="dob" className="form-control" required />
@@ -459,11 +460,11 @@ class Survey extends Component {
           <h4>What do you enjoy doing together and individually?</h4>
           <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           <h4>Please briefly describe how you think your life will change after the adoption</h4>
-          <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> */}
 
 
 
-          <button type="submit" className="btn btn-primary btn-lg btn-block" id="submit"><i className="fa fa-check-circle"
+          <button type="submit" className="btn btn-primary btn-lg btn-block" id="submit" href="/results"><i className="fa fa-check-circle"
             aria-hidden="true"></i>Submit</button>
 
         </div>

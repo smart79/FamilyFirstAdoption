@@ -13,14 +13,14 @@ class NavMenu extends React.Component {
                                 <div className="row">
                                     <div className="col-6 text-right d-sm-flex d-flex">
                                         <div className="ml-auto">
-                                            <a href="/" className="btn">Sponsor</a>
-                                            <a href="/" className="cta-btn">Login</a>
+                                            <a href="/sponsors" className="btn">Sponsor</a>
+                                            <a href="/Login" className="cta-btn">Login</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                        <nav className="navbar navbar-expand-lg navbar-light bg-light" id="whole-navbar">
                             <div className="container">
                                 <a className="navbar-brand" href="/">Family First Adoption Services</a>
                                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +30,10 @@ class NavMenu extends React.Component {
                                 <div className="collapse navbar-collapse" id="navbarsExample05">
                                     <ul className="navbar-nav ml-auto pl-lg-5 pl-0">
                                         <li className="nav-item">
-                                            <a className="nav-link active" href="/">Home</a>
+                                            <a className="nav-link active" href="/home">Home</a>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Adoption</a>
+                                            <a className="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                                             <div className="dropdown-menu" aria-labelledby="dropdown04">
                                                 <a className="dropdown-item" href="adoption.html">Adoption</a>
                                                 <a className="dropdown-item" href="adoption.html">Waiting Children</a>
@@ -43,10 +43,11 @@ class NavMenu extends React.Component {
                                         </li>
 
                                         <li className="nav-item">
-                                            <a className="nav-link" href="/About">About</a>
+                                            <a className="nav-link" href="/About">Adopt</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="/Contact">Contact</a>
+                                            <a className="nav-link" href="/contact">Contact</a>
+
                                         </li>
                                     </ul>
 

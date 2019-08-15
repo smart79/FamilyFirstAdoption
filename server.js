@@ -11,8 +11,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Define middleware here                     
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("./client/build"))
 
+app.use(passport.initialize())
+app.use(passport.session())
 // Requiring our models for syncing
 var db = require("./models");
 
@@ -20,16 +21,20 @@ var db = require("./models");
 require('./config/jwtConfig');
 require('./config/passport');
 
-app.use(passport.initialize())
-app.use(passport.session())
+require('./routes/User')(app);
+require('./routes/auth')(app);
 
 
-if (process.env.NODE_ENV === "test") {
-  syncOptions.force = true;
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
 }
 
-db.sequelize.sync({ force: true }).then(function () {
-  app.listen(PORT, function () {
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
+
+db.sequelize.sync({ force: false }).then(function() {
+  app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
 });
