@@ -1,21 +1,20 @@
 {
   "development": {
     "username": "root",
-    "password": "password",
+    "password": "Beason11!",
     "database": "familyfirstadoption_db",
     "host": "localhost",
-    "port": 8889,
+    "port": 3306,
     "freezeTableName": true,
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "password",
     "password": "Beason11!",
     "database": "familyfirstadoption_db",
     "host": "127.0.0.1",
     "freezeTableName": true,
-    "port": 8889,
+    "port": 3306,
     "dialect": "mysql"
   },
   "production": {

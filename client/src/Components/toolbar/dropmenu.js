@@ -8,28 +8,17 @@ class DropMenu extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-5 mb-4">
-                                <div class="card">
-                                    {/* <div class="card-header">
-                                        Thinking about Adoption?
-                                    </div> */}
-                                    <div class="card-body">
-                                        <h5 class="card-title">Thinking about Adoption?</h5>
-                                        <p class="card-text">You don’t need to own your own home, have children already, or be young, wealthy, 
-                                        or a stay-at-home parent to adopt or foster. Although eligibility requirements vary between states and territories, 
-                                        in most instances marital status, age, income, and sexual orientation will not automatically disqualify someone from being a 
-                                        foster parent or adopting a child from foster care.
-                                        <br/>
-                                        Characteristics needed to be a good adoptive parent include:
-                                        <br/>
-                                        Being stable, mature, dependable, and flexible Having the ability to advocate for children.
-                                        Being a team player with your family or child welfare worker While most adults qualify to foster and adopt, eligibility requirements 
-                                        vary between states. Our state foster care and adoption information can help individuals and families
-                                        determine whether they are eligible to adopt where they live. Child Welfare Information Gateway also has a summary 
-                                        of state laws about who may adopt, be adopted, or who may place a child for adoption
-                                        </p>
-                                        <p><a href="/About" className="btn btn-primary">Adopt a child now</a></p>
-                                    </div>
-                                </div>
+
+
+                                <p className="mb-5">You don’t need to own your own home, have children already, or be young, wealthy, or a stay-at-home parent to adopt or foster. Although eligibility requirements vary between states and territories, in most instances marital status, age, income, and sexual orientation will not automatically disqualify someone from being a foster parent or adopting a child from foster care.</p>
+
+                                <p>Characteristics needed to be a good adoptive parent include:<p />
+
+                                    <p> Being stable, mature, dependable, and flexible Having the ability to advocate for children
+                                    Being a team player with your family or child welfare worker While most adults qualify to foster and adopt, eligibility requirements vary between states. Our state foster care and adoption information can help individuals and families determine whether they are eligible to adopt where they live. Child Welfare Information Gateway also has a summary of state laws about who may adopt, be adopted, or who may place a child for adoption.</p></p>
+
+                                <p><a href="/About" className="btn btn-outline-primary">Adopt a child now</a></p>
+
                             </div>
                             <div className="col-md-1"></div>
                             <div className="col-md-6">

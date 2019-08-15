@@ -4,7 +4,7 @@
 }
 
 .top-bar{
-    background-color: rgb(243, 247, 2);
+    background-color: rgb(145, 83, 226);
 }
 .whole-navbar{
 
@@ -14,13 +14,10 @@ body{
     background-image: url(../images/pink.jpg);
 }
 
-/* h1, h2{
+h1, h2{
     color: aliceblue;
-} */
-section{
-    background-color: #007bb5;
-    padding: 15px;
 }
+
 #news{
     background-color: brown;
 }
@@ -53,31 +50,13 @@ section{
   .fa-linkedin {
     background: #007bb5;
     color: white;
-    border-color: black;
   }
   
   .fa-instagram {
     background: #125688;
     color: white;
-    
   }
 
 footer{
-    background-color:  #007bb5;
-    padding-top: 15px;
-}
-
-.survey{
-    background-color: aliceblue;
-    padding: 20px;
-}
-
-.contact{
-    background-color: aliceblue;
-    padding: 20px;
-}
-
-#content{
-    background-color: aliceblue;
-    padding: 20px;
+    background-color: rgb(145, 83, 226);
 }

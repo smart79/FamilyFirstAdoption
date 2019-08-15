@@ -32,7 +32,7 @@ class NavMenu extends React.Component {
                                         <li className="nav-item">
                                             <a className="nav-link active" href="/home">Home</a>
                                         </li>
-                                        {/* <li className="nav-item dropdown">
+                                        <li className="nav-item dropdown">
                                             <a className="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                                             <div className="dropdown-menu" aria-labelledby="dropdown04">
                                                 <a className="dropdown-item" href="adoption.html">Adoption</a>
@@ -40,16 +40,13 @@ class NavMenu extends React.Component {
                                                 <a className="dropdown-item" href="adoption-how-to.html">How to Adopt</a>
                                             </div>
 
-                                        </li> */}
-                                        <li className="nav-item">
-                                            <a className="nav-link active" href="/Description">About</a>
                                         </li>
 
                                         <li className="nav-item">
-                                            <a className="nav-link active" href="/About">Adopt</a>
+                                            <a className="nav-link" href="/About">Adopt</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link active" href="/contact">Contact</a>
+                                            <a className="nav-link" href="/contact">Contact</a>
 
                                         </li>
                                     </ul>
