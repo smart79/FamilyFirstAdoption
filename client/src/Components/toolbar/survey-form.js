@@ -322,6 +322,7 @@ class Survey extends Component {
 <br/>
           <button type="submit" className="btn btn-primary btn-lg btn-block" id="submit" href="/results"><i className="fa fa-check-circle"
             aria-hidden="true"></i>Submit</button>
+        </form>
 
         </div>
 
