@@ -9,8 +9,12 @@ module.exports = app => {
             res.json(data)
         })
     })
-};
-Collapse
+    app.get('/api/sponsor/available', (req, res) => {
+        db.Sponsor.findAll({}).then(data => {
+            res.json(data)
+        })
+    })
+}
 
 
 
