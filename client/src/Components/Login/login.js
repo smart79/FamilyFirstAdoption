@@ -5,7 +5,7 @@ import FieldGroup from '../Fieldgroup'
 import { Message } from '../Message/message'
 import { Redirect } from 'react-router-dom'
 
-class Login extends React.Component{
+class Login extends React.Component {
     state = {
         username: '',
         password: '',
@@ -34,27 +34,27 @@ class Login extends React.Component{
             });
         } else {
             axios.post('/loginUser',
-                    {
-                        username: this.state.username,
-                        password: this.state.password
-                    }
-                ).then(response => {
-                    if (response.data === 'Login failed') {
-                        console.log(response);
-                        this.setState({
-                            redirect: false,
-                            error: true,
-                            errorMessage: response.data 
-                        });
-                    } else {
-                        console.log('successful login');
-                        localStorage.setItem('JWT', response.data.token);
-                        this.setState({
-                            loggedIn: true,
-                            redirect: true
-                        });
-                    }
-                })
+                {
+                    username: this.state.username,
+                    password: this.state.password
+                }
+            ).then(response => {
+                if (response.data === 'Login failed') {
+                    console.log(response);
+                    this.setState({
+                        redirect: false,
+                        error: true,
+                        errorMessage: response.data
+                    });
+                } else {
+                    console.log('successful login');
+                    localStorage.setItem('JWT', response.data.token);
+                    this.setState({
+                        loggedIn: true,
+                        redirect: true
+                    });
+                }
+            })
                 .catch(error => {
                     console.log(error.data);
                 });
@@ -63,7 +63,7 @@ class Login extends React.Component{
 
     render() {
         if (this.state.redirect === true) {
-            return <Redirect to='/' />
+            return <Redirect to='/home' />
         }
 
         return (
@@ -94,14 +94,14 @@ class Login extends React.Component{
                                 </div>
                             </div>
                             <input id='submit' type='submit' value='SUBMIT' onClick={this.handleSubmit} />
-                            <span><a href='/signup'> Sign Up </a> </span> 
+                            <span><a href='/signup'> Sign Up </a> </span>
                             <br />
                             {this.state.error ? <Message key='1'> {this.state.errorMessage} </Message> : null}
                         </div>
                     </div>
                 </div>
             </div>
-                )
-            }
-        }
+        )
+    }
+}
 export default Login;
