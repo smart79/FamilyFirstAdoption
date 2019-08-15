@@ -13,8 +13,8 @@ class NavMenu extends React.Component {
                                 <div className="row">
                                     <div className="col-6 text-right d-sm-flex d-flex">
                                         <div className="ml-auto">
-                                            <a href="/" className="btn">Sponsor</a>
-                                            <a href="/" className="cta-btn">Login</a>
+                                            <a href="/sponsors" className="btn">Sponsor</a>
+                                            <a href="/Login" className="cta-btn">Login</a>
                                         </div>
                                     </div>
                                 </div>
@@ -30,7 +30,7 @@ class NavMenu extends React.Component {
                                 <div className="collapse navbar-collapse" id="navbarsExample05">
                                     <ul className="navbar-nav ml-auto pl-lg-5 pl-0">
                                         <li className="nav-item">
-                                            <a className="nav-link active" href="/">Home</a>
+                                            <a className="nav-link active" href="/home">Home</a>
                                         </li>
                                         <li className="nav-item dropdown">
                                             <a className="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
