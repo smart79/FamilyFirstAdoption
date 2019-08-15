@@ -11,7 +11,6 @@ class Jumbotron extends React.Component {
                     <p>When you are considering adopting a child with special needs we recommend that you take advantage of any specialized training available to equip you with the understanding and knowledge necessary to manage those challenges.</p>
                     <a className="btn btn-primary btn-lg" href="/" role="button">Learn more</a>
                 </div>
-
             </div>
 
         );

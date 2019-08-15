@@ -35,15 +35,30 @@ class Survey extends Component {
   render() {
     return (
       <div className="About">
-        <div className="container">
+        <div className="container survey">
 
-
-          <h3><strong>About You</strong></h3>
-
-          <h4>First Name (Required)</h4>
-          <input type="text" id="Fname" name="firstName" value={this.state.firstName} className="form-control" onChange={this.handleInputs} required />
-          <h4>Last Name (Required)</h4>
-          <input type="text" id="Lname" name="lastName" value={this.state.lastName} className="form-control" onChange={this.handleInputs} required />
+          <form>
+          <h1><strong>About You</strong></h1>
+          <div className="row">
+            <div class="form-group col-md-4">
+              <label>First Name (Required)</label>
+              <input type="text" id="Fname" name="firstName" value={this.state.firstName} className="form-control" onChange={this.handleInputs} required />
+            </div>
+            <div class="form-group col-md-4">
+              <label>Last Name (Required)</label>
+              <input type="text" id="Lname" name="lastName" value={this.state.lastName} className="form-control" onChange={this.handleInputs} required />
+            </div>
+          </div>
+          <div className="row">
+            <div class="form-group col-md-4">
+              <label>Email (Required)</label>
+              <input type="text" id="email" name="email" value={this.state.email} className="form-control" onChange={this.handleInputs} required />
+            </div>
+            <div class="form-group col-md-4">
+              <label>Phone Number (Required)</label>
+              <input type="text" id="phone" name="phone" value={this.state.phone} className="form-control" onChange={this.handleInputs} required />
+            </div>
+          </div>
           {/* <h4>Address</h4>
           <input type="text" id="address" name="address" value={this.state.address} className="form-control" onChange={this.handleInputs} />
           <h4>Spouse's First Name</h4>
@@ -52,16 +67,21 @@ class Survey extends Component {
           <input type="text" id="spouseLname" name="spLname" value={this.state.spLname} className="form-control" onChange={this.handleInputs} />
           <h4>Address</h4>
           <input type="text" id="spaddress" name="spaddress" value={this.state.spaddress} className="form-control" onChange={this.handleInputs} /> */}
-          <h4>City (Required)</h4>
+          <div className="row">
+          <div className="form-group col-md-4">
+          <label>City (Required)</label>
           <input type="text" id="city" name="city" value={this.state.city} className="form-control" onChange={this.handleInputs} required />
-          <h4>State (Required)</h4>
+          </div>
+          <div className="form-group col-md-4">
+          <label>State (Required)</label>
           <input type="text" id="state" name="state" value={this.state.state} className="form-control" onChange={this.handleInputs} required />
-          <h4>Country (Required)</h4>
+          </div>
+          <div className="form-group col-md-4">
+          <label>Country (Required)</label>
           <input type="text" id="country" name="country" value={this.state.country} className="form-control" onChange={this.handleInputs} required />
-          <h4>Phone Number (Required)</h4>
-          <input type="text" id="phone" name="phone" value={this.state.phone} className="form-control" onChange={this.handleInputs} required />
-          <h4>Email (Required)</h4>
-          <input type="text" id="email" name="email" value={this.state.email} className="form-control" onChange={this.handleInputs} required />
+          </div>
+          </div>
+
           {/* <h4>Religion</h4>
           <input type="text" id="religion" name="religion" value={this.state.religion} className="form-control" onChange={this.handleInputs} />
           <h4>Occupation</h4>
@@ -69,7 +89,7 @@ class Survey extends Component {
           <h4>Education</h4>
           <input type="text" id="education" name="education" value={this.state.education} className="form-control" onChange={this.handleInputs} /> */}
 
-          <h4>Link to Photo Image (Required)</h4>
+          <label>Link to Photo Image (Required)</label>
           <input type="text" id="photo" name="photo" value={this.state.photo} className="form-control" onChange={this.handleInputs} required />
 
           <hr />
@@ -466,6 +486,7 @@ class Survey extends Component {
 
           <button type="submit" className="btn btn-primary btn-lg btn-block" id="submit" href="/results"><i className="fa fa-check-circle"
             aria-hidden="true"></i>Submit</button>
+        </form>
 
         </div>
 

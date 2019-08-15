@@ -4,7 +4,7 @@
 }
 
 .top-bar{
-    background-color: rgb(145, 83, 226);
+    background-color: rgb(243, 247, 2);
 }
 .whole-navbar{
 
@@ -14,10 +14,13 @@ body{
     background-image: url(../images/pink.jpg);
 }
 
-h1, h2{
+/* h1, h2{
     color: aliceblue;
+} */
+section{
+    background-color: #007bb5;
+    padding: 15px;
 }
-
 #news{
     background-color: brown;
 }
@@ -58,5 +61,11 @@ h1, h2{
   }
 
 footer{
-    background-color: rgb(145, 83, 226);
+    background-color:  #007bb5;
+    padding-top: 15px;
+}
+
+.survey{
+    background-color: aliceblue;
+    padding: 20px;
 }

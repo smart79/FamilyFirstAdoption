@@ -7,7 +7,7 @@ class About extends Component {
   render() {
     return (
       <div className="About">
-        <NavMenu />
+        {/* <NavMenu /> */}
         <Survey />
       </div>
 
