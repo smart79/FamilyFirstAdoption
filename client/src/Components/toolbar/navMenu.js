@@ -46,7 +46,7 @@ class NavMenu extends React.Component {
                                             <a className="nav-link" href="/About">About</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="contact.html">Contact</a>
+                                            <a className="nav-link" href="/contact">Contact</a>
                                         </li>
                                     </ul>
 
