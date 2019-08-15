@@ -39,7 +39,7 @@ class Survey extends Component {
 
         <h3><strong>Your Preferences</strong></h3>
         
-
+<hr/>
           <h3><strong>Question 1</strong></h3>
           <h4>What Country do you wish to Adopt from?</h4>
           <select className="chosen-select" id="q1" name="adoptC" value={this.state.adoptC} onChange={this.handleInputs} >
