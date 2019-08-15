@@ -10,7 +10,13 @@ class DropMenu extends React.Component {
                             <div className="col-md-5 mb-4">
 
 
-                                <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nemo et, esse laudantium consequatur. Eum soluta illum architecto dolorum quae suscipit dignissimos! Saepe, amet explicabo nemo eligendi totam sint repudiandae.</p>
+                                <p className="mb-5">You don’t need to own your own home, have children already, or be young, wealthy, or a stay-at-home parent to adopt or foster. Although eligibility requirements vary between states and territories, in most instances marital status, age, income, and sexual orientation will not automatically disqualify someone from being a foster parent or adopting a child from foster care.</p>
+
+                                <p>Characteristics needed to be a good adoptive parent include:<p />
+
+                                    <p> Being stable, mature, dependable, and flexible Having the ability to advocate for children
+                                    Being a team player with your family or child welfare worker While most adults qualify to foster and adopt, eligibility requirements vary between states. Our state foster care and adoption information can help individuals and families determine whether they are eligible to adopt where they live. Child Welfare Information Gateway also has a summary of state laws about who may adopt, be adopted, or who may place a child for adoption.</p></p>
+
                                 <p><a href="/About" className="btn btn-outline-primary">Adopt a child now</a></p>
 
                             </div>
@@ -20,7 +26,7 @@ class DropMenu extends React.Component {
                                 <div id="accordion">
                                     <div className="card mb-2">
                                         <h5 className="mb-0">
-                                            <a href="/" className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <a href="/home" className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                 1. Getting Started
                             <span className="icon ion-chevron-down"></span>
                                             </a>
@@ -28,13 +34,13 @@ class DropMenu extends React.Component {
 
                                         <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                             <div className="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid velit, asperiores libero. Beatae vitae nostrum et distinctio saepe autem quisquam cupiditate labore voluptatum, eligendi ipsam atque assumenda odit, perferendis dicta.
-                        </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="card mb-2">
                                         <h5 className="mb-0">
-                                            <a href="/" className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <a href="/home" className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                 2. Envisioning your family
                             <span className="icon ion-chevron-down"></span>
                                             </a>
@@ -47,7 +53,7 @@ class DropMenu extends React.Component {
                                     </div>
                                     <div className="card mb-2">
                                         <h5 className="mb-0">
-                                            <a href="/" className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <a href="/home" className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                 3. Getting approved
                             <span className="icon ion-chevron-down"></span>
                                             </a>
@@ -61,7 +67,7 @@ class DropMenu extends React.Component {
 
                                     <div className="card mb-2">
                                         <h5 className="mb-0">
-                                            <a href="/" className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <a href="/home" className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                                 4. Being matched with a child
                             <span className="icon ion-chevron-down"></span>
                                             </a>
@@ -75,7 +81,7 @@ class DropMenu extends React.Component {
 
                                     <div className="card mb-2">
                                         <h5 className="mb-0">
-                                            <a href="/" className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            <a href="/home" className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                                 5. Receiving a placement
                             <span className="icon ion-chevron-down"></span>
                                             </a>
@@ -89,21 +95,21 @@ class DropMenu extends React.Component {
 
                                     <div className="card mb-2">
                                         <h5 className="mb-0">
-                                            <a href="/" className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            <a href="/home" className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                                 6. Finalizing an adoption
                             <span className="icon ion-chevron-down"></span>
                                             </a>
                                         </h5>
                                         <div id="collapseSix" className="collapse" aria-labelledby="headingSix" data-parent="#accordion">
                                             <div className="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sint placeat praesentium, libero excepturi laboriosam officia sapiente ipsa magnam asperiores tempora ea, et repellendus reprehenderit dolores, hic at in. Fugit.
-                        </div>
+
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div className="card mb-2">
                                         <h5 className="mb-0">
-                                            <a href="/" className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            <a href="/home" className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                                 7. State information
                             <span className="icon ion-chevron-down"></span>
                                             </a>
