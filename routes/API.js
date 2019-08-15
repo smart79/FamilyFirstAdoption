@@ -7,6 +7,18 @@ var db = require("../models");
 // Routes
 // =============================================================
 module.exports = app => {
+
+    app.get("/api/children/ui", function (req, res) {
+        db.Children.findAll({
+            where: {
+                Ccountry: req.params.adoptC,
+                Cage: req.params.adoptA,
+                Cgender: req.params.adoptG,
+                Cspnds: req.params.adoptS
+            }
+        })
+    })
+
     app.get('/api/children/:id', (req, res) => {
         db.Children.findOne({
             where: {
