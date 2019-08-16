@@ -6,6 +6,8 @@ import Login from './Components/Login/login';
 import SignUp from './Components/signup/signup';
 import Contact from './Components/contact';
 import Results from './Components/results';
+import Description from './Components/Description';
+import sponinfo from './Components/toolbar/sponInfo';
 
 class App extends Component {
   render() {
@@ -19,7 +21,9 @@ class App extends Component {
           <Route path="/home" component={Home} />
           <Route path="/About" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/Description" component={Description} />
           <Route path="/results" component={Results} />
+          <Route path="/sponinfo" component={sponinfo} />
         </Router>
       </div>
 

@@ -23,6 +23,8 @@ require('./config/passport');
 
 require('./routes/User')(app);
 require('./routes/auth')(app);
+require('./routes/API')(app);
+require('./routes/sponsors')(app);
 
 
 if (process.env.NODE_ENV === "production") {
@@ -33,8 +35,8 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-db.sequelize.sync({ force: false }).then(function() {
-  app.listen(PORT, function() {
+db.sequelize.sync({ force: false }).then(function () {
+  app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
   });
 });
