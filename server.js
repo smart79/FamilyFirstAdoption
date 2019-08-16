@@ -21,7 +21,7 @@ var db = require("./models");
 require('./config/jwtConfig');
 require('./config/passport');
 
-require('./routes/User')(app);
+require('./routes/user')(app);
 require('./routes/auth')(app);
 require('./routes/API')(app);
 require('./routes/sponsors')(app);
