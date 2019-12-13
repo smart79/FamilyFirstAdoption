@@ -27,7 +27,7 @@
     "moment": "^2.22.2",
     "mysql2": "^1.6.4",
     "nodemon": "^1.18.7",
-    "npm": "^6.4.1",
+    "npm": "^6.13.4",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
